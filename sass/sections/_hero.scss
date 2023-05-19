@@ -1,5 +1,5 @@
 .hero {
-    background: no-repeat url(../../img/hero-desktop1x.jpg);
+    background: no-repeat url(../img/hero-desktop1x.jpg);
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
@@ -41,6 +41,11 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
+        transition: 250ms cubic-bezier(0.39, 0.575, 0.565, 1) 25ms;
+        cursor: pointer;
+        &:hover {
+            background-color: #9900ff;
+        }
     }
 
 }
