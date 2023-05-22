@@ -19,6 +19,15 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: all cubic-bezier(.7,.14,.19,.42) 0.5s;
+
+    &:hover {
+      background-color: $accent-color;
+      color: $link-color;
+      border: solid $link-color 1px;
+      transform: scale(1.1);
+    }
+
   }
 
   &__list {

@@ -384,6 +384,13 @@ h3 {
 .services__button {
   margin-left: auto;
   margin-top: 55px;
+  transition: all cubic-bezier(0.7, 0.14, 0.19, 0.43) 0.4s;
+}
+.services__button:hover {
+  background-color: #FFFFFF;
+  color: #4985FF;
+  border: solid #4985FF 1px;
+  transform: scale(1.1);
 }
 @media screen and (min-width: 768px) {
   .services__button {
@@ -454,6 +461,13 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: all cubic-bezier(0.7, 0.14, 0.19, 0.42) 0.5s;
+}
+.project__button:hover {
+  background-color: #FFFFFF;
+  color: #4985FF;
+  border: solid #4985FF 1px;
+  transform: scale(1.1);
 }
 .project__list {
   display: flex;

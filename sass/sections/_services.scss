@@ -5,9 +5,11 @@
     max-width: 540px;
     @include section-title($accent-color);
     font-size: 30px;
-    @media screen and (min-width:768px){
+
+    @media screen and (min-width:768px) {
       font-size: 36px;
     }
+
     text-align: left;
   }
 
@@ -27,6 +29,14 @@
     @extend %button-style;
     margin-left: auto;
     margin-top: 55px;
+    transition: all cubic-bezier(.7, .14, .19, .43) 0.4s;
+
+    &:hover {
+      background-color: $accent-color;
+      color: $link-color;
+      border: solid $link-color 1px;
+      transform: scale(1.1);
+    }
 
     @media screen and (min-width: 768px) {
       margin-top: 0px;
