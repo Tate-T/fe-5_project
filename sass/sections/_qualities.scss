@@ -33,6 +33,14 @@
     @extend %button-style;
     margin: 55px auto 0;
     display: block;
+    transition: 500ms background-color cubic-bezier(0.175, 0.885, 0.32, 1.275) 300ms,
+            500ms color cubic-bezier(0.895, 0.03, 0.685, 0.22) 300ms;
+    
+    &:hover {
+      background-color: $accent-color;
+      color: $subtitle;
+      border-color: black;
+    }
   }
 
   &__list {
