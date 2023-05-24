@@ -49,11 +49,10 @@
   }
 
   &__item {
-    // @include grids-item(3, 27px);
-    width: calc((100% - (1 * 27px)) / 1);
+    @include grids-item(1, 27px);
     display: flex;
     @media screen and (min-width: 768px) {
-      width: calc((100% - (3 * 27px)) / 3);
+      @include grids-item(3, 27px);
     }
   }
 
